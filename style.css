@@ -1,0 +1,263 @@
+body {
+    font-family: "Futura";
+    background-color: #fbf1d9;
+}
+
+details summary {
+    font-weight: 900;
+    transition: 0.5s;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: url(assets/arrow.png);
+    margin: 0px 5px;
+    margin-bottom: 2px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+summary:hover::before {
+    margin: 0px 10px;
+    margin-bottom: 2px;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0px;
+    transition: 0.5s;
+    background-color: #fbf1d9;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.pricelist details {
+    background-color: #cdd5a5;
+}
+
+.faq, .pricelist {
+    border-radius: 10px;
+    padding: 5px;
+    
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    margin-top: 10px;
+}
+
+.faq {
+    background-color: #cdd5a5;
+}
+
+.pricelist {
+    background-color: #fbf1d9;
+}
+
+.faq span, .pricelist span {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h1 span {
+    background-color: black;
+    padding: 5px;
+    margin-right: 5px;
+    color: #cdd5a5;
+    border-radius: 10px;
+    border: 2px solid #cdd5a5;
+    border-bottom: 5px solid #cdd5a5;
+    border-right: 5px solid #cdd5a5;
+}
+
+article .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #cdd5a5;
+    flex-shrink: 0;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+article {
+    margin-bottom: 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #cdd5a5;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.video img {
+    height: 40px;
+    align-self: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.video img:hover {
+    scale: 150%;
+    background-color: #fbf1d9;
+}
+
+.courses {
+    margin-top: 10px;
+}
+
+.courses .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.courses .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(30% - 5px);
+    background-color: #cdd5a5;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.courses .card .img {
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: #fbf1d9;
+    transition: 0.5s;
+}
+
+.courses span:first-child {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.courses .card .img:hover {
+    height: 110px;
+}
+
+.team {
+    margin-top: 10px;
+}
+
+.team .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.team .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(30% - 5px);
+    background-color: #cdd5a5;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.team .card .img {
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: #fbf1d9;
+    transition: 0.5s;
+}
+
+.team span:first-child {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.team .card .a {
+    color: #fbf1d9;
+    transition: 0.5s;
+}
+
+.team .card .a:hover {
+    color: black;
+}
+
+footer .wrapper {
+    display: flex;
+}
+
+footer .row {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 15%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer .media {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .contact a {
+    text-decoration: none;
+    color: #cdd5a5;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+footer .contact a:hover {
+    color: black;
+}
+
+footer .contact {
+    justify-content: space-evenly;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer img:hover {
+    transform: scale(115%);
+    filter: brightness(0) saturate(102%) invert(91%) sepia(32%) saturate(303%) hue-rotate(28deg) brightness(78%) contrast(103%);
+}
