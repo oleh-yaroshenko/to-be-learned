@@ -3,6 +3,11 @@ body {
     background-color: #fbf1d9;
 }
 
+::selection {
+    background-color: #000000;
+    color: #cdd5a5;
+}
+
 details summary {
     font-weight: 900;
     transition: 0.5s;
@@ -38,7 +43,7 @@ details {
     padding: 5px;
     margin: 10px 0px;
     transition: 0.5s;
-    background-color: #fbf1d9;
+    background-color: #ffffff;
     border: 2px solid black;
     border-bottom: 5px solid black;
     border-right: 5px solid black;
@@ -51,7 +56,6 @@ details {
 .faq, .pricelist {
     border-radius: 10px;
     padding: 5px;
-    
     border: 2px solid black;
     border-bottom: 5px solid black;
     border-right: 5px solid black;
@@ -63,7 +67,7 @@ details {
 }
 
 .pricelist {
-    background-color: #fbf1d9;
+    background-color: #ffffff;
 }
 
 .faq span, .pricelist span {
@@ -89,7 +93,7 @@ article .img {
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    background-color: #cdd5a5;
+    background-color: #ffffff;
     flex-shrink: 0;
     margin-left: 10px;
     border: 2px solid black;
@@ -126,7 +130,7 @@ article {
 
 .video img:hover {
     scale: 150%;
-    background-color: #fbf1d9;
+    background-color: #ffffff;
 }
 
 .courses {
@@ -156,7 +160,7 @@ article {
     border-radius: 10px;
     height: 100px;
     width: 100%;
-    background-color: #fbf1d9;
+    background-color: #ffffff;
     transition: 0.5s;
 }
 
@@ -196,7 +200,7 @@ article {
     border-radius: 10px;
     height: 200px;
     width: 100%;
-    background-color: #fbf1d9;
+    background-color: #ffffff;
     transition: 0.5s;
 }
 
@@ -206,7 +210,7 @@ article {
 }
 
 .team .card .a {
-    color: #fbf1d9;
+    color: #ffffff;
     transition: 0.5s;
 }
 
